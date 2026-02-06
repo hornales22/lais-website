@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admissions – Sample Public School</title>
+  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Official website for our school: admissions, academics, news, and contact details." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css" />
+<link rel="icon" href="/assets/icons/favicon.png" />
+<script defer src="/js/main.js"></script>
+
+</head>
+<body>
+  
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" role="banner">
+  <div class="container">
+    <a class="brand" href="/index.html" aria-label="School home">
+      <img src="/assets/icons/logo.svg" alt="School logo" />
+      <span>Sample Public School</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">☰</button>
+    <nav id="primary-nav" class="nav" role="navigation">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li class="has-sub"><a href="/academics.html">Academics</a>
+          <ul class="submenu">
+            <li><a href="/academics.html#curriculum">Curriculum</a></li>
+            <li><a href="/academics.html#clubs">Clubs & Organizations</a></li>
+          </ul>
+        </li>
+        <li><a href="/admissions.html">Admissions</a></li>
+        <li><a href="/news.html">News</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main id="main" class="container">
+    <h1>Admissions</h1>
+    <p>We welcome new and transfer learners. See requirements and timelines below.</p>
+    <section>
+      <h2>Requirements</h2>
+      <ul>
+        <li>PSA Birth Certificate (photocopy)</li>
+        <li>Report Card / Form 138 (if transferee)</li>
+        <li>Good Moral Certificate (if applicable)</li>
+        <li>Two 1x1 ID Photos</li>
+        <li>Completed Enrolment Form</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Enrollment Timeline</h2>
+      <ol>
+        <li>Application Submission</li>
+        <li>Document Verification</li>
+        <li>Advising</li>
+        <li>Sectioning & Orientation</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Online Pre-Registration</h2>
+      <form id="applyForm" class="form" aria-describedby="applyHelp">
+        <p id="applyHelp">This form collects basic info for pre-registration. Our registrar will contact you.</p>
+        <label>Student Name
+          <input name="studentName" required />
+        </label>
+        <label>Grade Level Applying For
+          <select name="grade" required>
+            <option value="" disabled selected>Select</option>
+            <option>Kinder</option>
+            <option>Grade 1</option>
+            <option>Grade 7</option>
+            <option>Grade 11</option>
+          </select>
+        </label>
+        <label>Parent/Guardian Email
+          <input name="email" type="email" required />
+        </label>
+        <button class="btn primary" type="submit">Submit</button>
+        <div id="applyMsg" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  
+<footer class="site-footer" role="contentinfo">
+  <div class="container grid">
+    <section>
+      <h3>Sample Public School</h3>
+      <p>Brgy. Your Barangay, Your City, Your Province</p>
+      <p>Open: Mon–Fri, 7:30 AM – 5:00 PM</p>
+    </section>
+    <section>
+      <h4>Contact</h4>
+      <ul>
+        <li>Phone: (000) 123-4567</li>
+        <li>Email: info@sampleps.edu</li>
+        <li>Facebook: fb.com/sampleps</li>
+      </ul>
+    </section>
+    <section>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/admissions.html">Admissions</a></li>
+        <li><a href="/academics.html">Academics</a></li>
+        <li><a href="/news.html">News</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="copyright">© <span id="year"></span> Sample Public School. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
